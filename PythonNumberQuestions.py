@@ -10,50 +10,39 @@ while value <= n:
 
 #2
     
-   # Ask the user for a value of n
 n = int(input("Enter a value for n: "))
-
-# Initialize the starting number
 current = 1
-
-# Initialize an iteration counter
 iterations = 0
-
-# Start the while loop to print numbers up to n squared
 while current <= n ** 2:
     print(current)
-    
-    # Increment the current number and iteration count
     current += 1
     iterations += 1
-    
-    # Check if the iteration count has reached 50
     if iterations == 50:
         print("Reached 50 iterations, stopping early.")
-        break  # Stop the loop if 50 iterations are reached
+        break
 
-#3
+#3 
 
-# Loop through numbers from 3 to 29
 for num in range(3, 30):
-    # Check if the number is odd and not a multiple of 5
     if num % 2 != 0 and num % 5 != 0:
         print(num)
+    
+#4    
 
+start = int(input("Enter the start of the range: "))
+end = int(input("Enter the end of the range: "))
+multiple_to_ignore = int(input("Enter the multiple to ignore: "))
+for num in range(start, end + 1):
+    if num % 2 != 0 and num % multiple_to_ignore != 0:
+        print(num)
     
+#5    
+
+for num in range(50, 19, -1):
+    if num % 2 == 0 and num % 3 != 0:
+        print(num)
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+#6    
+
+for num in range(12, -15, -2):
+    print(num)
